@@ -1,10 +1,10 @@
 import "./styles.css";
 
-function Header({ NuKenzieIMG }) {
+function Header({ NuKenzieIMG, setValidationHomePage }) {
   return (
     <header className="headerNuKenzie">
       <img src={NuKenzieIMG} alt="Nu Kenzie"></img>
-      <button>Inicio</button>
+      <button onClick={() => setValidationHomePage(true)}>Inicio</button>
     </header>
   );
 }

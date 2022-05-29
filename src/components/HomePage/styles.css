@@ -1,0 +1,82 @@
+.homePage {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #212529;
+}
+
+.detailsHome {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  margin: 2vh 4vw;
+}
+
+.detailsHome > p {
+  color: #fd377e;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.detailsHome > p > span {
+  color: #ffffff;
+}
+
+.detailsHome > .descriptionHome {
+  color: #ffffff;
+  font-size: 28px;
+}
+
+.detailsHome > span {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.detailsHome > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 20px;
+  background: #fd377e;
+  border: 2px solid #fd377e;
+  border-radius: 8px;
+  color: #ffffff;
+  width: 241px;
+  max-width: 241px;
+  margin: 0 auto;
+}
+
+.homePage > img {
+  margin: 0 auto;
+  width: 80vw;
+  height: 60vh;
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+  .homePage > img {
+    height: 55vh;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1600px) {
+  .homePage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .detailsHome {
+    margin: 0 0 0 10vw;
+  }
+
+  .detailsHome > button {
+    margin: 0;
+  }
+
+  .homePage > img {
+    margin: 0 5vw 0 0;
+  }
+}
