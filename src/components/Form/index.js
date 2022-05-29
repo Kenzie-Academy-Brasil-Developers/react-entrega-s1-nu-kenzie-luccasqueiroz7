@@ -1,3 +1,5 @@
+import "./styles.css";
+
 function Form({ listTransactions, setListTransactions }) {
   function addTransaction(newTransaction) {
     setListTransactions([newTransaction, ...listTransactions]);
@@ -16,19 +18,28 @@ function Form({ listTransactions, setListTransactions }) {
           value: formTransaction[1].value,
         };
 
-        /* Buscar uma logica pra evitar valores vazios */
         addTransaction(objetoTransaction);
       }}
     >
-      {/* VER ESTILIZAÇÃO DEPOIS, COM LABEL E ETC*/}
-      <input placeholder="Digite aqui sua descrição"></input>
-      <input placeholder="valor"></input>
-      <select>
-        <option value="entrada">Entrada</option>
-        {/* Conferir se vai dar conflito em algum lugar por conta de ter mudado "saida" */}
-        <option value="despesas">Despesas</option>
-      </select>
-      <button type="submit"></button>
+      <div className="descricaoTransacao">
+        <label>Descrição</label>
+        <input placeholder="Digite aqui sua descrição"></input>
+        <span>Ex: Compra de roupas</span>
+      </div>
+      <div className="valoresTransacao">
+        <div>
+          <label>Valor</label>
+          <input placeholder="R$"></input>
+        </div>
+        <div>
+          <label>Tipo de valor</label>
+          <select>
+            <option value="Entrada">Entrada</option>
+            <option value="Despesa">Despesa</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit">Inserir valor</button>
     </form>
   );
 }

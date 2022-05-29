@@ -1,3 +1,5 @@
+import "./styles.css";
+
 function TotalMoney({ listTransactions }) {
   return (
     <div className="totalMoney">
@@ -11,6 +13,7 @@ function TotalMoney({ listTransactions }) {
           }, 0)}
         </span>
       </p>
+      <span>O valor se refere ao saldo</span>
     </div>
   );
 }

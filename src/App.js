@@ -1,29 +1,36 @@
 import { useState } from "react";
 import "./App.css";
 import Form from "./components/Form";
+import Header from "./components/Header";
 import List from "./components/List";
 import TotalMoney from "./components/TotalMoney";
+import NoCardIMG from "./components/assets/NoCard.png";
+import NuKenzieIMG from "./components/assets/Nu Kenzie.png";
 
 function App() {
   const [listTransactions, setListTransactions] = useState([]);
-  /* EXEMPLO:
-  useState([
-    { description: "Salário recebido", type: "entrada", value: 2500 },
-    { description: "Conta de luz", type: "saída", value: -150 }
-  ]) */
 
   return (
-    <div className="App">
-      <Form
-        listTransactions={listTransactions}
-        setListTransactions={setListTransactions}
-      />
-      <TotalMoney listTransactions={listTransactions} />
-      <List
-        listTransactions={listTransactions}
-        setListTransactions={setListTransactions}
-      />
-    </div>
+    <>
+      <Header NuKenzieIMG={NuKenzieIMG} />
+      <div className="App">
+        <div>
+          <Form
+            listTransactions={listTransactions}
+            setListTransactions={setListTransactions}
+          />
+          {listTransactions.length > 0 && (
+            <TotalMoney listTransactions={listTransactions} />
+          )}
+        </div>
+
+        <List
+          listTransactions={listTransactions}
+          setListTransactions={setListTransactions}
+          NoCardIMG={NoCardIMG}
+        />
+      </div>
+    </>
   );
 }
 

@@ -1,0 +1,55 @@
+ul > li {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+
+.detailsCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px 4vw;
+}
+
+.entradaCard {
+  border-left: 4px solid #03b898;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.despesaCard {
+  border-left: 4px solid #e9ecef;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.descriptionCard {
+  font-size: 16px;
+  font-weight: 700;
+  color: #212529;
+}
+
+.typeCard {
+  font-weight: 400;
+  font-size: 12px;
+  color: #5b6166;
+}
+
+.valueCard {
+  font-size: 12px;
+  color: #212529;
+  padding: 12px 0 0 0;
+}
+
+ul > li > button {
+  width: 22px;
+  height: 22px;
+  background: #e9ecef;
+  border: none;
+  border-radius: 2.5px;
+  background-image: url(/src/components/assets/trash.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  margin: 8px 0 0 0;
+}

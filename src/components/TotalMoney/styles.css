@@ -1,0 +1,21 @@
+.totalMoney {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.totalMoney > p {
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #212529;
+}
+
+.totalMoney > p > span {
+  color: #fd377e;
+}
+
+.totalMoney > span {
+  font-size: 12px;
+  color: #5b6166;
+}

@@ -1,0 +1,88 @@
+label {
+  font-size: 14px;
+}
+
+#formTransaction {
+  padding: 5vh 0;
+  margin-top: 10px;
+}
+
+.descricaoTransacao {
+  display: flex;
+  flex-direction: column;
+}
+
+.descricaoTransacao > input,
+.valoresTransacao > div > input,
+.valoresTransacao > div > select {
+  width: 70vw;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  padding: 0 5vw;
+  background: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+.descricaoTransacao > input {
+  max-width: 314px;
+}
+
+.descricaoTransacao > span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #868e96;
+}
+
+.valoresTransacao {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.valoresTransacao > div > input,
+.valoresTransacao > div > select {
+  width: 40vw;
+  color: #868e96;
+}
+
+#formTransaction > button {
+  width: 84vw;
+  max-width: 314px;
+  height: 48px;
+  background: #fd377e;
+  border: 2px solid #fd377e;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 19px auto 0;
+}
+
+@media (min-width: 901px) and (max-width: 1600px) {
+  #formTransaction {
+    max-width: 370px;
+    padding: 24px 38px;
+  }
+
+  .descricaoTransacao > input,
+  .valoresTransacao > div > input,
+  .valoresTransacao > div > select {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    background: #f8f9fa;
+    border: 2px solid #f8f9fa;
+    border-radius: 8px;
+    margin-top: 12px;
+  }
+
+  .valoresTransacao > div > input {
+    max-width: 128px;
+  }
+}
