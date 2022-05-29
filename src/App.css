@@ -22,7 +22,7 @@ button {
   }
 }
 
-@media (min-width: 901px) and (max-width: 1600px) {
+@media (min-width: 901px) and (max-width: 3000px) {
   .App {
     display: flex;
     flex-direction: row;

@@ -63,7 +63,7 @@ label {
   margin: 19px auto 0;
 }
 
-@media (min-width: 901px) and (max-width: 1600px) {
+@media (min-width: 901px) and (max-width: 3000px) {
   #formTransaction {
     max-width: 370px;
     padding: 24px 38px;

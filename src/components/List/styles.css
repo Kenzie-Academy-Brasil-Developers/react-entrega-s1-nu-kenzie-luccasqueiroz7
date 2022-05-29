@@ -37,7 +37,7 @@ header > h3 {
   width: 84vw;
 }
 
-@media (min-width: 901px) and (max-width: 1600px) {
+@media (min-width: 901px) and (max-width: 3000px) {
   .listTransactions {
     margin-top: 34px;
   }

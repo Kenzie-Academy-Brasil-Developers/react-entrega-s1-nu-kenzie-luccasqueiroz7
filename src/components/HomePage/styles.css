@@ -61,7 +61,7 @@
   }
 }
 
-@media (min-width: 1000px) and (max-width: 1600px) {
+@media (min-width: 1000px) and (max-width: 3000px) {
   .homePage {
     display: flex;
     flex-direction: row;
