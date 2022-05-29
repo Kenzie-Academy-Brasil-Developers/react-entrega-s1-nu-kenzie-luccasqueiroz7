@@ -8,7 +8,11 @@ function TotalMoney({ listTransactions }) {
         <span>
           ${" "}
           {listTransactions.reduce((acc, actualValue) => {
-            return acc + Number(actualValue.value);
+            if (actualValue.type === "Entrada") {
+              return acc + Number(actualValue.value);
+            } else {
+              return acc - Number(actualValue.value);
+            }
           }, 0)}
         </span>
       </p>
