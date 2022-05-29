@@ -3,7 +3,6 @@ import "./styles.css";
 function TotalMoney({ listTransactions }) {
   return (
     <div className="totalMoney">
-      {/* tentar aplicar space-between aqui */}
       <p>
         Valor Total:{" "}
         <span>

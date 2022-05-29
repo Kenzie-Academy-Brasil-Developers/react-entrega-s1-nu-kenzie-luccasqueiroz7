@@ -41,10 +41,6 @@ function List({ listTransactions, setListTransactions, NoCardIMG }) {
             value="Entrada"
             onClick={(event) => {
               ShowFilter("Entrada");
-
-              // BUSCAR PELO ELEMENTO PAI DELES
-              /*               let filtros = document.querySelector('.filtrosCard') */
-              /* filtros = [...filtros] */
               let botoesfiltro = document.querySelectorAll(
                 ".filtrosCard > button"
               );
